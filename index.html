@@ -14,6 +14,26 @@
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Newspaper Website</title>
+    <style>
+        @keyframes marquee {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+
+            /* অর্ধেক স্ক্রল করলে repeat effect হয় */
+        }
+
+        .animate-marquee {
+            display: flex;
+            width: 200%;
+            /* repeat করা element গুলোর জন্য জায়গা */
+            animation: marquee 20s linear infinite;
+        }
+    </style>
 </head>
 
 <body>
@@ -99,15 +119,54 @@
                     </ul>
                 </div>
                 <div class="navbar-end space-x-4">
-                    <a class="btn bg-[#D2ECFF] hover:bg-[#08426A] hover:text-white"><span><i class="fa-solid fa-magnifying-glass"></i></span><span class="hidden md:block">Search</span></a>
-                    <a class="btn bg-[#D2ECFF] hover:bg-[#08426A] hover:text-white"><span><i class="fa-solid fa-plus"></i></span><span class="hidden md:block">Add News Portal</span></a>
-                    <a class="btn bg-[#D2ECFF] hover:bg-[#08426A] hover:text-white"><span><i class="fa-regular fa-user"></i></span><span class="hidden md:block">Login</span></a>
+                    <a class="btn bg-[#D2ECFF] hover:bg-[#08426A] hover:text-white"><span><i
+                                class="fa-solid fa-magnifying-glass"></i></span><span
+                            class="hidden md:block">Search</span></a>
+                    <a class="btn bg-[#D2ECFF] hover:bg-[#08426A] hover:text-white"><span><i
+                                class="fa-solid fa-plus"></i></span><span class="hidden md:block">Add News
+                            Portal</span></a>
+                    <a class="btn bg-[#D2ECFF] hover:bg-[#08426A] hover:text-white"><span><i
+                                class="fa-regular fa-user"></i></span><span class="hidden md:block">Login</span></a>
                 </div>
             </div>
         </section>
     </header>
     <main>
+        <!-- This is category section -->
+        <section class="mt-12">
+            <h1 class="text-2xl font-medium text-center mb-6">Top Category</h1>
+            <div class="overflow-hidden">
+                <div class="flex gap-6 animate-marquee">
+                    <span class="text-white bg-blue-600 px-6 py-2">Technology</span>
+                    <span class="text-white bg-green-600 px-6 py-2">Business</span>
+                    <span class="text-white bg-red-600 px-6 py-2">Sports</span>
+                    <span class="text-white bg-purple-600 px-6 py-2">Entertainment</span>
+                    <span class="text-white bg-orange-600 px-6 py-2">Politics</span>
+                    <span class="text-white bg-teal-600 px-6 py-2">Health</span>
+                    <span class="text-white bg-pink-600 px-6 py-2">Education</span>
+                    <span class="text-white bg-indigo-600 px-6 py-2">Travel</span>
 
+                    <!-- একই লাইন আবার repeat করতে হবে smooth looping এর জন্য -->
+                    <span class="text-white bg-blue-600 px-6 py-2">Technology</span>
+                    <span class="text-white bg-green-600 px-6 py-2">Business</span>
+                    <span class="text-white bg-red-600 px-6 py-2">Sports</span>
+                    <span class="text-white bg-purple-600 px-6 py-2">Entertainment</span>
+                    <span class="text-white bg-orange-600 px-6 py-2">Politics</span>
+                    <span class="text-white bg-teal-600 px-6 py-2">Health</span>
+                    <span class="text-white bg-pink-600 px-6 py-2">Education</span>
+                    <span class="text-white bg-indigo-600 px-6 py-2">Travel</span>
+
+                    <span class="text-white bg-blue-600 px-6 py-2">Technology</span>
+                    <span class="text-white bg-green-600 px-6 py-2">Business</span>
+                    <span class="text-white bg-red-600 px-6 py-2">Sports</span>
+                    <span class="text-white bg-purple-600 px-6 py-2">Entertainment</span>
+                    <span class="text-white bg-orange-600 px-6 py-2">Politics</span>
+                    <span class="text-white bg-teal-600 px-6 py-2">Health</span>
+                    <span class="text-white bg-pink-600 px-6 py-2">Education</span>
+                    <span class="text-white bg-indigo-600 px-6 py-2">Travel</span>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
 
