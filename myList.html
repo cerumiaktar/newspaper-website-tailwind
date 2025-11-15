@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Daisy UI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>My List Page</title>
+</head>
+
+<body>
+    <header>
+        <!-- Navbar -->
+        <section class="bg-base-100 shadow-sm">
+            <div class="navbar container mx-auto">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="-1"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 text-base shadow">
+                            <li><a>Top Newspaper</a></li>
+                            <li>
+                                <a>Districts</a>
+                                <ul class="p-2">
+                                    <li><a>Dhaka</a></li>
+                                    <li><a>Gazipur</a></li>
+                                    <li><a>Kishoreganj</a></li>
+                                    <li><a>Manikganj</a></li>
+                                    <li><a>Munshiganj</a></li>
+                                    <li><a>Narayanganj</a></li>
+                                    <li><a>Narsingdi</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="myList.html">My List</a></li>
+                            <li><a>Latest News</a></li>
+                            <li><a>Jobs</a></li>
+                            <li>
+                                <a>Country</a>
+                                <ul class="p-2">
+                                    <li><a>Bangladesh</a></li>
+                                    <li><a>Canada</a></li>
+                                    <li><a>Australia</a></li>
+                                    <li><a>Germany</a></li>
+                                    <li><a>Japan</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="index.html"><img src="./assets/logo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-base">
+                        <li><a>Top Newspaper</a></li>
+                        <li>
+                            <details>
+                                <summary>Districts</summary>
+                                <ul class="p-2">
+                                    <li><a>Dhaka</a></li>
+                                    <li><a>Gazipur</a></li>
+                                    <li><a>Kishoreganj</a></li>
+                                    <li><a>Manikganj</a></li>
+                                    <li><a>Munshiganj</a></li>
+                                    <li><a>Narayanganj</a></li>
+                                    <li><a>Narsingdi</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li><a href="myList.html">My List</a></li>
+                        <li><a>Latest News</a></li>
+                        <li><a>Jobs</a></li>
+                        <li>
+                            <details>
+                                <summary>Countrys</summary>
+                                <ul class="p-2">
+                                    <li><a>Bangladesh</a></li>
+                                    <li><a>Canada</a></li>
+                                    <li><a>Australia</a></li>
+                                    <li><a>Germany</a></li>
+                                    <li><a>Japan</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar-end space-x-4">
+                    <a class="btn bg-[#D2ECFF] hover:bg-[#08426A] hover:text-white"><span><i
+                                class="fa-solid fa-magnifying-glass"></i></span><span
+                            class="hidden md:block">Search</span></a>
+                    <a class="btn bg-[#D2ECFF] hover:bg-[#08426A] hover:text-white"><span><i
+                                class="fa-solid fa-plus"></i></span><span class="hidden md:block">Add News
+                            Portal</span></a>
+                    <a class="btn bg-[#D2ECFF] hover:bg-[#08426A] hover:text-white"><span><i
+                                class="fa-regular fa-user"></i></span><span class="hidden md:block">Login</span></a>
+                </div>
+            </div>
+        </section>
+    </header>
+</body>
+
+</html>
