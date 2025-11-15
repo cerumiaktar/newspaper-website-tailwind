@@ -1443,7 +1443,7 @@
         <!-- This is About Section -->
         <section class="container mx-auto">
             <h1 class="text-2xl font-bold text-center mb-6">About</h1>
-            <div>
+            <div class="flex flex-col ">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                     aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -1494,26 +1494,29 @@
             </div>
         </section>
     </main>
-    <footer>
-        <footer class="footer footer-horizontal footer-center bg-black text-white rounded p-10">
-            <nav class="grid grid-flow-col gap-6 text-xl font-bold">
-                <a class="link link-hover">Home</a>
-                <a class="link link-hover">About</a>
-                <a class="link link-hover">Privacy Policy</a>
-                <a class="link link-hover">Terms & Condition</a>
-            </nav>
-            <nav>
-                <div class="grid grid-flow-col gap-4">
-                    <a class="text-2xl"><i class="fa-brands fa-square-facebook"></i></a>
-                    <a class="text-2xl"><i class="fa-brands fa-square-instagram"></i></a>
-                    <a class="text-2xl"><i class="fa-brands fa-linkedin"></i></a>
-                    <a class="text-2xl"><i class="fa-brands fa-square-youtube"></i></a>
-                </div>
-            </nav>
-            <aside>
-                <p>Copyright © 2025 - All right reserved by <span class="font-bold">SARKAR IT</span></p>
-            </aside>
-        </footer>
+    <footer class="footer footer-horizontal footer-center bg-black text-white rounded p-10">
+        <nav class="grid grid-flow-row md:grid-flow-col gap-6 text-xl font-bold">
+            <a class="link link-hover">Home</a>
+            <a class="link link-hover">About</a>
+            <a class="link link-hover">Privacy Policy</a>
+            <a class="link link-hover">Terms & Condition</a>
+        </nav>
+
+        <nav>
+            <div class="grid grid-flow-col gap-4 justify-center">
+                <a class="text-2xl"><i class="fa-brands fa-square-facebook"></i></a>
+                <a class="text-2xl"><i class="fa-brands fa-square-instagram"></i></a>
+                <a class="text-2xl"><i class="fa-brands fa-linkedin"></i></a>
+                <a class="text-2xl"><i class="fa-brands fa-square-youtube"></i></a>
+            </div>
+        </nav>
+
+        <aside class="text-center">
+            <p>
+                Copyright © 2025 - All right reserved by
+                <span class="font-bold">SARKAR IT</span>
+            </p>
+        </aside>
     </footer>
 </body>
 
